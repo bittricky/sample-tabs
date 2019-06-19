@@ -1,0 +1,73 @@
+
+/**
+ * Tabs Component
+ */
+.tabs * {
+  transition: all 0.4s ease-in-out;
+}
+
+.tabs {
+  width: 100%;
+  margin: 70px 0 0;
+}
+
+.tabs .container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 4% 0;
+  box-sizing: border-box;
+}
+
+.tabs nav {
+  padding: 0;
+  margin: auto auto 20px auto;
+  border-bottom: 1px solid var(--grey);
+  width: inherit;
+  white-space: nowrap;
+}
+
+/**
+ * Navigation Colors
+ */
+.tabs nav a.active {
+  color: var(--black);
+}
+
+.tabs nav a:hover {
+  color: var(--blue);
+}
+
+.tabs nav a {
+  display: block;
+  font-size: 13px;
+  color: var(--grey-61);
+  text-decoration: none;
+  padding: 7px 8px;
+}
+
+/**
+ * Indicator Line
+ */
+.tabs hr {
+  position: absolute;
+  border: 0;
+  border-bottom: 1px solid var(--black);
+  z-index: 0;
+  transform: translateX(-60px);
+}
+
+/**
+ * Nav Items
+ */
+.tabs nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs nav li:not(:last-child) {
+  margin-right: 4.5%;
+}
